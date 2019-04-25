@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Log2Producer
+namespace LogProducer
 {
     class MainClass
     {
