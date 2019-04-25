@@ -50,6 +50,7 @@
     <Compile Include="Models\LogModel.cs" />
     <Compile Include="Helpers\QueueManager.cs" />
     <Compile Include="Helpers\StorageAccountConfig.cs" />
+    <Compile Include="Helpers\LogProducer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

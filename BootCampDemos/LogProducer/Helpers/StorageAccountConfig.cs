@@ -3,9 +3,8 @@ namespace LogProducer.Helpers
 {
     public static class StorageAccountConfig
         {
-
-            public const string myStorageAccount = "ignitetour2019storage";
-            public const string myStorageAccountKey = "xeo/vJVPR/fdyopfr6915b+rTpTbbNoZe3Nwbydvkxbe7IW3xEOXkyu9I4Lew4aZs9Ug3WUpfDdtr+WINp23mA==";
+            public const string myStorageAccount = "azurebootcampmexico2019";
+            public const string myStorageAccountKey = "4CsnmJmPTDL5styMqhQyQs7zLR+jTrpZKK16rgagaDARKiVAvwKYMBelDxAKkg/+oH88R6JMhlgRmJTEH2NgtA==";
         }
 
 }

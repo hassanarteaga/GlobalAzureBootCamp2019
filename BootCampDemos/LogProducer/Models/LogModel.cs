@@ -13,6 +13,8 @@ namespace LogProducer.Models
         public int severity { get; set; }
         public string log_date { get; set; }
         public long nlog_date { get; set; }
-        public List<string> data { get; set; }
+        public string[] data { get; set; }
+
+
     }
 }
