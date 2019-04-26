@@ -15,7 +15,7 @@ namespace LogProducer
                 Helpers.QueueManager.SendMessageToQueue("queuelog2", strLog);
                 Console.WriteLine($"Sending Message Queue: {strLog}");
             }
-            Console.WriteLine("Sending Messages To Queues...");
+            Console.WriteLine("Finished...");
             Console.ReadKey();
         }
     }

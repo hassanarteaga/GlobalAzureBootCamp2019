@@ -29,7 +29,7 @@ namespace HelperAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1",  });
+                c.SwaggerDoc("v1", new Info { Title = "Helper API v1.0.", Version = "v1", Contact=new Contact { Name="Hassan Arteaga Rodríguez", Email="hassan.arteaga@mysuitemex.com"}, Description="Helper API. Azure Global BootCamp México 2019. " });
             });
         }
 
@@ -52,7 +52,7 @@ namespace HelperAPI
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Helper API v1.0");
             });
             app.UseHttpsRedirection();
             app.UseMvc();

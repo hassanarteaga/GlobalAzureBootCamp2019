@@ -1,0 +1,21 @@
+#r "Newtonsoft.Json"
+
+using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+public static void Run(string myQueueItem, out object logDocument, ILogger log)
+{
+    log.LogInformation($"C# Log1 processed: {myQueueItem}");
+
+    dynamic log1 = JObject.Parse(myQueueItem);
+    logDocument = new {
+        id=Guid.NewGuid().ToString(),
+        particion = log1.user,
+        transaction_name = log1.transaction_name,
+        severity = log1.severity,
+        nlog_date = log1.nlog_date,
+        log_date=log1.log_date,
+        data=log1.data
+    };
+}
