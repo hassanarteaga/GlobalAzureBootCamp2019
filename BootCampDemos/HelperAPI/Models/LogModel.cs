@@ -18,4 +18,16 @@ namespace HelperAPI.Models
 
 
     }
+
+    public class ValidationModel
+    {
+        public ValidationModel()
+        {
+
+        }
+        [Required(ErrorMessage = "Object Type  is required")]
+        public string ObjType { get; set; }
+        [StringLength(5)]
+        public string ObjBehavior { get; set; }
+    }
 }
