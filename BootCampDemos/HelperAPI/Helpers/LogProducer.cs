@@ -17,7 +17,7 @@ namespace HelperAPI.Helpers
             {
                 data = Guid.NewGuid().ToString().Split('-'),
                 transaction_name = transactions[new Random(seed * seed).Next(0, 10)],
-                user = users[new Random(seed * seed).Next(0, 10)],
+                //user = users[new Random(seed * seed).Next(0, 10)],
                 log_date = eventDate,
                 nlog_date = Convert.ToInt64(eventDate.Replace("-", "").Replace(":", "").Replace(" ", "")),
                 severity = new Random().Next(1, 10)
