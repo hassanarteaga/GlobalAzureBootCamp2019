@@ -8,7 +8,7 @@ namespace LogProducer
         public static void Main(string[] args)
         {
             Console.WriteLine("Sending Messages To Queues...");
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 10; i++)
             {
                 string strLog = JsonConvert.SerializeObject(Helpers.LogProducer.ProduceLogEvent(i + 1));
                 Helpers.QueueManager.SendMessageToQueue("queuelog1", strLog);
