@@ -17,7 +17,7 @@ namespace HelperAPI.Controllers
         public List<Models.LogModel> Get()
         {
             List<Models.LogModel> logList = new List<Models.LogModel>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 100; i++)
             {
                 Models.LogModel logModel = Helpers.LogProducer.ProduceLogEvent(i + 1);
                 string strLog = JsonConvert.SerializeObject(logModel);
